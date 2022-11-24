@@ -5,9 +5,13 @@
 Как бы я строил рест апи:
 
 > POST http://localhost:1024/v1/user - create user 
+> 
 > POST http://localhost:1024/v1/user/{userId}/auth - get token 
+> 
 > POST http://localhost:1024/v1/user/{userId}/message - create message 
+> 
 > GET http://localhost:1024/v1/user/{userId}/message - get all message 
+> 
 > GET http://localhost:1024/v1/user/{userId}/message/{messageId} - get message by id 
 
 Далее примеры методов  из проекта
