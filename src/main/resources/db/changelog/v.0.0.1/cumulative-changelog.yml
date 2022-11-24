@@ -1,0 +1,21 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: add-tag-0.0.1
+      author: nullpanic
+      changes:
+        - tagDatabase:
+            tag: v.0.0.1
+
+  - include:
+      file: create-table-users.yml
+      relativeToChangeLogFile: true
+  - include:
+      file: create-table-roles.yml
+      relativeToChangeLogFile: true
+  - include:
+      file: create-table-user_roles.yml
+      relativeToChangeLogFile: true
+  - include:
+      file: create-table-user_messages.yml
+      relativeToChangeLogFile: true

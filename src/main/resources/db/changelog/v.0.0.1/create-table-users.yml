@@ -1,0 +1,32 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: create-table-users
+      author: nullpanic
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: user_id
+                  type: bigint
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(32)
+                  constraints:
+                    unique: true
+              - column:
+                  name: secret
+                  type: varchar(32)
+              - column:
+                  name: token
+                  type: varchar
+        - createSequence:
+            sequenceName: USER_SEQ
+            incrementBy: 1
+            startValue: 1
+            minValue: 1
+            maxValue: 9223372036854775807
