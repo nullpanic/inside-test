@@ -66,7 +66,8 @@
 >- docker-compose
 >#### to deploy application:
 >#### 1) Switch into needed branch and run shell script with db auth params: 
->zsh example: `$ bash start.sh DB_USER DB_PASSWORD`
+>zsh example: `sh start.sh admin qwerty123 asdb123asdasdasdasdasdjajkfdlkt564frvb1r5vc4vb2c4r28vc5rcv4b258cvrv42358vcr425v4cr2vc452v3485cv235r4v2c5rv425vc4r28cr4v235v8cr4235vc4br2836cvr4b28c35v6c4r2v83cb
+`
 
 ## Technology stack:
 >- Maven 
